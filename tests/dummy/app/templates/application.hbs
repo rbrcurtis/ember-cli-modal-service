@@ -1,7 +1,10 @@
 <h2 id="title">Welcome to Ember</h2>
 
-<button class="btn btn-primary" {{action "launchModal"}}>Modal</button>
+<button class="btn btn-primary" id="launchModalBtn" {{action "launchModal"}}>Modal</button>
 
 {{modal-manager}}
+
+<div id="resolvedResults">{{resolvedResults}}</div>
+<div id="rejectedResults">{{rejectedResults}}</div>
 
 {{outlet}}

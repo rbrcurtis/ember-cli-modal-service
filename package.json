@@ -1,10 +1,14 @@
 {
   "name": "ember-cli-modal-service",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
-  "directories": {
+  "version": "0.1.0",
+  "description": "An Ember modal service packaged as an Ember-Addon",
+  "homepage":"http://www.arexo.be/",
+  "directories":{
     "doc": "doc",
     "test": "tests"
+  },
+  "bugs":{
+    "url":"https://github.com/Arexo/ember-cli-modal-service/issues"
   },
   "scripts": {
     "build": "ember build",
@@ -15,7 +19,11 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": {
+    "name":"Antoine Dubois",
+    "email":"antoine.dubois@arexo.be",
+    "url":"http://www.arexo.be"
+  },
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
@@ -37,7 +45,11 @@
     "ember-try": "~0.0.8"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "modal", 
+    "modal dialog", 
+    "modal component",
+    "bootstrap"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.5",

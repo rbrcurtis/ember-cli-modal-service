@@ -1,5 +1,5 @@
 <div class="modal-header">
-	<button type="button" class="close" data-dismiss="modal">&times;</button>
+	<button type="button" class="close" {{action 'rejectMe'}}>&times;</button>
 	<h4 class="modal-title">Default Modal</h4>
 </div>
 <div class="modal-body">
@@ -9,16 +9,16 @@
 	</div>
 
 	<div>
-	<p> Modal data : {{model.data}}</p>
+	<p> Modal data : <span id="modalModelData">{{model.data}}</span></p>
 	</div>
 </div>
 <div class="modal-footer">
 	<div class="row">
 		<div class="col-sm-12">
-			<button class="btn btn-success" {{action 'resolveMe'}}>
+			<button class="btn btn-success" id="resolveModalBtn" {{action 'resolveMe'}}>
 				Resolve
 			</button>
-			<button class="btn btn-danger" {{action 'rejectMe'}}>
+			<button class="btn btn-danger" id="rejectModalBtn" {{action 'rejectMe'}}>
 				Reject
 			</button>
 		</div>

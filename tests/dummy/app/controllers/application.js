@@ -4,12 +4,16 @@ export default Ember.Controller.extend({
 
 	modal:Ember.inject.service(),
 
+	resolvedResults:null,
+	rejectedResults:null,
+
 	actions:{
 		launchModal:function(){
+			var self = this;
 			this.get('modal').showModal('modal-example', {data:'modal-example-data'}).then(function(modalResult){
-				console.log('modal-example resolved with results ', modalResult);
+				self.set('resolvedResults', modalResult);
 			}).catch(function(modalResult){
-				console.log('modal-example rejected with results ', modalResult);
+				self.set('rejectedResults', modalResult);
 			});
 		}
 	}

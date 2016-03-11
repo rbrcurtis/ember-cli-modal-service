@@ -1,6 +1,6 @@
 # Ember-cli-modal-service
 
-An Ember modal service packaged as an Ember-Addon. It allows to simply implement [Bootstrap](http://getbootstrap.com/javascript/#modals) modal dialog and open them through a service call.
+An Ember modal service packaged as an Ember-Addon. It allows to simply implement [Bootstrap](http://getbootstrap.com/javascript/#modals) modal dialog and open them through a service call that returns a promise.
 
 ## Demo
 
@@ -70,7 +70,7 @@ export default ModalInstance.extend({
 {{!-- app/templates/components/modal-example.hbs --}}
 
 <div class="modal-header">
-	<button type="button" class="close" data-dismiss="modal">&times;</button>
+	<button type="button" class="close" {{action 'rejectMe'}}>&times;</button>
 	<h4 class="modal-title">Modal Example</h4>
 </div>
 <div class="modal-body">
