@@ -4,7 +4,7 @@ An Ember modal service packaged as an Ember-Addon. It allows to simply implement
 
 ## Demo
 
-Visit (demo)[http://www.arexo.be/demo/ember-cli-modal-service]
+Visit [demo](http://www.arexo.be/demo/ember-cli-modal-service)
 
 ## Installation
 
