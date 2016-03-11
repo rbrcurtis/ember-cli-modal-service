@@ -31,7 +31,7 @@ The addon depends on Bootstrap (>3.x) but doesn't install it as a Bower dependen
 This addon provides a `modal-manager` component that you should insert in a near hierarchy top template.
 
 ```handlebars
-// app/templates/application.hbs
+{{!-- app/templates/application.hbs --}}
 
 ...
 {{modal-manager}}
@@ -41,7 +41,7 @@ This addon provides a `modal-manager` component that you should insert in a near
 To create a modal dialog, extend the modal-instance component and create an associated template as it's the content of the tag `modal-content` from Bootstrap modal.
 
 ```javascript
-// app/components/modal-example
+// app/components/modal-example.js
 
 import Ember from 'ember';
 import layout from '../templates/components/modal-example';
@@ -67,7 +67,7 @@ export default ModalInstance.extend({
 ```
 
 ```handlebars
-// app/templates/components/modal-example.hbs
+{{!-- app/templates/components/modal-example.hbs --}}
 
 <div class="modal-header">
 	<button type="button" class="close" data-dismiss="modal">&times;</button>
