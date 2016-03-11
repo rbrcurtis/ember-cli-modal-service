@@ -1,0 +1,1 @@
+export { default } from 'ember-cli-modal-service/components/modal-wrapper';
