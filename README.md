@@ -2,9 +2,9 @@
 
 An Ember modal service packaged as an Ember-Addon. It allows to simply implement [Bootstrap](http://getbootstrap.com/javascript/#modals) modal dialog and open them through a service call that returns a promise.
 
-## Demo
+## Documentation and Demo
 
-Visit [demo](http://www.arexo.be/demo/ember-cli-modal-service)
+Visit [demo](https://www.arexo.be/blog/arexos-ember-c…-handling-easy/)
 
 ## Installation
 
