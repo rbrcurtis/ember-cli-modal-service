@@ -4,9 +4,13 @@
 var path        = require('path');
 
 function importBootstrap(app){
-  var bootstrapPath = path.join(app.bowerDirectory, 'bootstrap/dist');
+  
+  var ref = app;
+  while (ref.parent) {
+      ref = ref.parent;
+  }
 
-
+  var bootstrapPath = path.join(ref.bowerDirectory, 'bootstrap/dist');
 
   app.import(path.join(bootstrapPath, 'css/bootstrap.css'));
   //app.import(path.join(bootstrapPath, 'css/bootstrap.css.map'), {destDir: 'assets'});
