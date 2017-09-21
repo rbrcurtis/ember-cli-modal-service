@@ -7,6 +7,7 @@ const a = Ember.A; // jshint ignore:line
 
 export default Ember.Component.extend({
   layout: layout,
+  containerClass: 'modal-dialog modal-lg',
 
   modal:inject.service(),
 
