@@ -1,8 +1,8 @@
 <div class="modal fade ">
-	<div class="modal-dialog  modal-lg">
+	<div class="modal-dialog  {{containerClass}}">
 		<div class="modal-content">
-			{{component modal.componentName 
-				model=modal.context  
+			{{component modal.componentName
+				model=modal.context
 				onCloseResolve="closeModalResolve" onCloseReject="closeModalReject"}}
 		</div>
 	</div>

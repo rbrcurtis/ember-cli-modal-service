@@ -1,4 +1,8 @@
 {{#each modals as |modal|}}
-	{{modal-wrapper modal=modal onCloseResolve="closeModalResolve" onCloseReject="closeModalReject"}}
+	{{modal-wrapper
+		modal=modal
+		onCloseResolve="closeModalResolve"
+		onCloseReject="closeModalReject"
+		containerClass=containerClass
+	}}
 {{/each}}
-
