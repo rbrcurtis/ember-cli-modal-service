@@ -8,6 +8,8 @@ const a = Ember.A; // jshint ignore:line
 export default Ember.Component.extend({
   layout: layout,
   containerClass: 'modal-lg',
+  modalOptions: {},
+  // keyboard setting is NOT supported - cannot exit modal by pressing ESC
 
   modal:inject.service(),
 

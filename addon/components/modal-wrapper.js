@@ -12,10 +12,10 @@ export default Ember.Component.extend({
 
 
   show: on('didInsertElement', function() {
-    this.$('.modal').modal();
+    this.$('.modal').modal(this.get('modalOptions'));
   }),
 
-  
+
   close:function(){
     this.$('.modal').modal('hide');
   },
